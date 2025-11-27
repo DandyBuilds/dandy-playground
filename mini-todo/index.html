@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Mini Todo</h1>
+            <p>A tiny, persistent todo list in the Dandy dark card style.</p>
+            <form class="todo-form" aria-label="Add a task">
+                <input id="taskInput" type="text" name="task" placeholder="What needs doing?" autocomplete="off" />
+                <button id="addBtn" type="submit">Add task</button>
+            </form>
+            <ul id="todoList" class="todo-list" aria-live="polite"></ul>
+            <div class="actions">
+                <button id="clearDone" type="button" class="secondary">Clear done</button>
+                <span class="hint">Tasks auto-save to localStorage.</span>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
